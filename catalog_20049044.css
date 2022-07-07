@@ -1,0 +1,567 @@
+gift_vouch{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: linear-gradient(
+        to right, #833ab4,
+        #fd1d1d, #fcb045);
+    background-size: 400% 400%;
+    animation: gift_vouch 10s infinite ease-in-out;
+    height: 5200px;
+}
+@keyframes gift_vouch {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    
+}
+
+
+storelogo{
+    display: inline-block;
+    background-image: url(logo.jpg);
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    margin-bottom: 100px;
+    margin-left: 310px;
+}
+
+store_name{
+    display: flex;
+    width: 300px;
+    margin-right: 430px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    background-image: linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        hotpink 90%,
+        hotpink 90%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right ;
+    transition: background-size 300ms;
+}
+
+store_name:hover{
+    display: flex;
+    background-size: 100% 100%;
+    background-position-x: left ;
+}
+
+Content{
+    display: flex;
+    width: 80px;
+    height: 60px;
+    justify-self: "end";
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-image: linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        hotpink 90%,
+        hotpink 90%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right ;
+    transition: background-size 300ms;
+}
+Content:hover{
+    display: flex;
+    background-size: 100% 100%;
+    background-position-x: left ;
+    
+}
+
+Navigation{
+    background-color: #ffffff;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 60px;
+}
+/*
+Navigation{
+    background: pink;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+    color: rgb(70, 83, 153);
+    text-decoration: none;
+    font-size: 20px;
+    width: 98.7%;
+}
+*/
+main{
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+
+category{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    
+    margin-left: 250px;
+    row-gap: 10px;
+
+
+}
+
+[GID="2a"]{
+    
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    padding: 20px;
+    width: 800px;
+    height: 650px;
+    margin-left: 50px;
+    margin: 10px;
+    margin-top: 80px;
+    background-image: url(back.jpg);
+    border-image: linear-gradient(
+        #18ec18,
+        #e6e8ea,
+        #000000) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+
+@keyframes rotate {
+    50% {
+        border-image:  linear-gradient(
+            #18ec18,
+            #e6e8ea,
+            #000000) 1
+        ;
+    }
+}
+
+
+
+Name{
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-left: 50px;
+    color: rgba(1, 55, 32, 0.462);
+    font-style:normal;
+}
+
+type::before{
+    content: "Type: "; 
+   
+}
+
+Item_Num,UID,type,Developer,Amount,deli_type,Validity,Publisher,discount,cashback,Use_Place,Num_Users,Payment,policy,Delievery,Availability{
+    display: block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+Publisher::before{
+    content: "Publisher: ";
+    
+}
+
+UID::before{
+    content: "UID: ";
+}
+
+Developer::before{
+    content: "Developed By: ";
+}
+
+Amount::before{
+    content: "Price - £";
+}
+
+Validity::before{
+    content: "Validity Until - ";
+}
+
+discount::before{
+    content: "Discount - ";
+}
+
+discount::after{
+    content: "%";
+}
+
+Delievery::before{
+    content: "Delievery Mode - ";
+}
+
+deli_time{
+    display: list-item;
+    font-size: 20px;
+}
+
+deli_type::before{
+    content: "Delievered via ";
+}
+Payment::before{
+    content: "Payment - ";
+}
+
+policy::before{
+    content: "Policies - ";
+}
+
+return,refund{
+    display: list-item;
+    font-size: 20px;
+}
+
+return::before{
+    content: "Return: ";
+}
+
+refund::before{
+    content: "Refund: ";
+}
+
+Item_Num::before{
+    content: "Item Number: ";
+}
+
+Num_Users::before{
+    content: "Number of Users - ";
+}
+
+Payment::before{
+    content: "Payment modes - ";
+}
+
+pay_phy,pay_eg{
+    display: list-item;
+}
+
+Availability::before{
+    content: "Available - ";
+}
+
+description::before{
+    content: "About: ";
+}
+
+cashback::before{
+    content: "Cashback: ";
+}
+
+cashback::after{
+    content: "%";
+}
+
+Use_Place::before{
+    content: "To be used in: ";
+}
+
+click{
+    display: block;
+    width: 80px;
+    border: 5px solid;
+    
+    /*border: 3px solid #1fe8b6;
+    margin-top: 30px;*/
+}
+
+/*
+click:hover{
+    text-decoration: none;
+}
+
+click::before,click::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    border: inherit;
+    transition: all .5s;
+
+}
+*/
+/*
+click::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+*/
+
+
+
+@keyframes animate_border{
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+[GID="2b"]{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    padding: 20px;
+    width: 800px;
+    margin-left: 50px;
+    margin: 10px;
+    margin-top: 80px;
+    background-image: url(back2.jpg);
+    border-image: linear-gradient(
+        #18ec18,
+        #e6e8ea,
+        #000000) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+
+[GID="2c"]{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    padding: 20px;
+    width: 800px;
+    margin-left: 50px;
+    margin: 10px;
+    margin-top: 80px;
+    background-image: url(back3.jpg);
+    border-image: linear-gradient(
+        #18ec18,
+        #e6e8ea,
+        #000000) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+
+[GID="2d"]{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    padding: 20px;
+    width: 800px;
+    margin-left: 50px;
+    margin: 10px;
+    margin-top: 80px;
+    background-image: url(back4.jpg);
+    border-image: linear-gradient(
+        #18ec18,
+        #e6e8ea,
+        #000000) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+
+[GID="2e"]{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    padding: 20px;
+    width: 800px;
+    margin-left: 50px;
+    margin: 10px;
+    margin-top: 80px;
+    background-image: url(back5.jpg);
+    border-image: linear-gradient(
+        #18ec18,
+        #e6e8ea,
+        #000000) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+
+[GID="2f"]{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    padding: 20px;
+    width: 800px;
+    margin-left: 50px;
+    margin: 10px;
+    margin-top: 80px;
+    background-image: url(back6.jpg);
+    border-image: linear-gradient(
+        #18ec18,
+        #e6e8ea,
+        #000000) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+
+card {
+    display: grid;
+    grid-template-columns: 300px;
+    width: 100%;
+    grid-template-rows: 450px ;
+    margin-left: 8px;
+    
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+}
+name{
+    margin-top:30px;
+    font-size:25px;
+    color: coral;
+}
+description{
+    color: rgb(7, 12, 135);
+    font-size:16px;
+    font-weight: 300;
+    
+    padding-top: 30px;
+    
+    display: block;
+}
+card_detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+    color: white;
+    
+}
+card[CID="G1"]
+{
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: relative;
+    
+}
+
+card[CID="G2"]{
+    background-image: url(img2.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: relative;
+}
+
+card[CID="G3"]{
+    background-image: url(img3.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: relative;
+}
+
+card[CID="G4"]{
+    background-image: url(img4.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: relative;
+}
+
+card[CID="G5"]{
+    background-image: url(img5.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: relative;
+}
+
+card[CID="G6"]{
+    background-image: url(img6.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: relative;
+}
+
+
+[class="bottom"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 2px;
+    column-rule: 4px double #2d76bb;
+    color: white;
+    padding:10px;
+}
+
+[class="price"]{
+    color: grey;
+    font-size: 22px;
+  }
+  
+[class="button"] {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(251, 83, 83);
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    font-size: 18px;
+}
+
+click:hover{
+    opacity: 0.7;
+    background: #5f06fa;
+    
+}
+
+bar_code{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-image: url("sample-barcode.jpg");
+    background-size: cover;
+}
+footer{
+    display: flex;
+    background-color: rgb(76, 171, 197);
+    background-image: url("2081844.jpg");
+    background-size: contain;
+    justify-self: "end";
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+logo{
+    display: inline;
+    width: 70px;
+    height: 70px;
+    background-image: url("logo.jpg");
+    background-size: contain;
+}
+
+address, contact, web_address, logo, branch, bar_code{
+    margin-right: 10px;
+}

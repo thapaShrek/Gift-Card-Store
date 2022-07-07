@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="catalog_20049044.css"?>
+
+<gift_vouch xsi:noNamespaceSchemaLocation="catalog_20049044.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <Navigation >
+        <store_name >  Smiles for Miles </store_name>
+        <Content>Home</Content>
+        <Content>Products</Content>
+        <Content>About Us</Content>
+        <Content>Contact</Content>
+    </Navigation>
+    
+    <storelogo/>
+    <main>
+        <category kind="store">
+            
+            <gift_card GID="2a">
+                <Data_Info form="Digital">
+                    <Name>Amazon Gift Card</Name>
+                    <Item_Num>102259815</Item_Num>
+                    <type form="Digital">Digital</type>
+                    <UID>4515555544</UID>
+                    
+                    <Developer platform="e-commerce">Amazon</Developer>
+                    <Publisher>Amazon.com </Publisher>
+                    <Amount currency="pound"> price</Amount>
+                    <Validity char="date">2022-10-15</Validity>
+                    <discount>5</discount>
+                    <Use_Place>Amazon App or Website</Use_Place>  
+                    <Delievery>
+                        <deli_time>Instant Delievery</deli_time>
+                        <deli_time>In the future</deli_time>
+                    </Delievery> <!-- Optional Data-->
+                    <deli_type>Text Message or Email</deli_type>
+                    <Num_Users>6</Num_Users>
+                    <Payment>
+                        <pay_eg>e-sewa, Khalti</pay_eg>
+                    </Payment>
+                    <policy>
+                        <return>No</return>
+                        <refund>Yes</refund>
+                    </policy>
+                    <Availability>Yes</Availability>
+                    <click class="button">Add to Cart</click> 
+                </Data_Info>
+                <card_list>
+                    <card CID="G1">
+                        <detail>
+                            <name>Amazon</name>
+                            <description>Amazon is an online-shopping company. The gift card can be used to get
+                                discounts when ordering from amazon.</description>
+                        </detail>
+                        <card_detail>
+                            <Quantity location="bottom">
+                                <Number>50</Number>
+                                <Title>Quantity</Title>
+                            </Quantity>
+                            <Rating location="bottom">
+                                <Num>4.5</Num>
+                                <title>Rating</title>
+                            </Rating>
+                            <Ranks location="bottom">
+                                <Val>#1</Val>
+                                <rank>Rank</rank>
+                            </Ranks>
+                        </card_detail>
+                    </card>
+                </card_list>
+            </gift_card>
+            <gift_card GID="2b">
+                <Data_Info form="Physical">
+                    <Name> Sainsbury Gift Card</Name>
+                    <Item_Num>154193735</Item_Num>
+                    <type form="Physical">Physical</type>
+                    
+                    <Developer platform="Retail Store">Sainsbury's</Developer>
+                    <Publisher>Sainbury</Publisher>
+                    <Amount currency="pound"> 25</Amount>
+                    <Validity char="date">2022-12-27</Validity>
+                    <cashback>3</cashback>
+                    <Use_Place>Any retail stores or gas stations</Use_Place>  
+                    <Delievery>
+                        <deli_time>Instant Delievery</deli_time>
+                    </Delievery> 
+                    <Num_Users>1</Num_Users>
+                        
+                    <Payment>
+                        <pay_phy>Cash on Delievery</pay_phy><!-- -->
+                        <pay_eg>e-sewa, Khalti</pay_eg>
+                    </Payment>
+                    <policy>
+                        <return>no</return>
+                        <refund>no</refund>         
+                    </policy>
+                       
+                    <Availability>Yes</Availability>
+                    <click class="button"> Add to Cart</click>
+                </Data_Info>
+                <card_list>
+                    <card CID="G2">
+                        <detail>
+                            <name>Sainsbury</name>
+                            <description>Sainsbury is a retail store located in the UK. The gift card can be used to get
+                                discounts when shopping from Sainsbury.</description>
+                        </detail>
+                        <card_detail>
+                            <Quantity location="bottom">
+                                <Number>25</Number>
+                                <Title>Quantity</Title>
+                            </Quantity>
+                            <Rating location="bottom">
+                                <Num>4.1</Num>
+                                <title>Rating</title>
+                            </Rating>
+                            <Ranks location="bottom">
+                                <Val>#11</Val>
+                                <rank>Rank</rank>
+                            </Ranks>
+                        </card_detail>
+                    </card>
+                </card_list>
+            </gift_card>
+        </category>
+        <category kind="Music">
+                <gift_card GID="2c">
+                    <Data_Info form="Digital">
+                        <Name>Spotify Gift Card</Name>
+                        <Item_Num> 152752415</Item_Num>
+
+                        <type form="Digital">Digital</type>
+                        <Developer platform="Music">Spotify</Developer>
+                        
+                        <Amount currency="pound">30</Amount>
+                        <Validity char="date">2023-03-10</Validity>
+                        <Use_Place>Spotify App or Website</Use_Place>  
+                        <Delievery>
+                            <deli_time>Instant Delievery</deli_time>
+                            <deli_time>In the future</deli_time>
+                        </Delievery> <!-- Optional Data-->
+                        <deli_type>Your Phone Number or E-mail</deli_type>
+                        <Num_Users>3</Num_Users>
+                        <Payment>
+                            <pay_eg>e-sewa, Khalti</pay_eg>
+                        </Payment>
+                        <policy>
+                            <return>Yes</return>
+                            <refund>No</refund>
+                        </policy>
+                        <Availability>Yes</Availability>
+                        <click class="button"> Add to Cart</click>
+
+                    </Data_Info>
+                    <card_list>
+                        <card CID="G3">
+                            <detail>
+                                <name>Spotify</name>
+                                <description>Spotify is an online music streaming company. The gift card can be used to get
+                                    offers when creating new accounts in spotify.</description>
+                            </detail>
+                            <card_detail>
+                                <Quantity location="bottom">
+                                    <Number>100</Number>
+                                    <Title>Quantity</Title>
+                                </Quantity>
+                                <Rating location="bottom">
+                                    <Num>4.8</Num>
+                                    <title>Rating</title>
+                                </Rating>
+                                <Ranks location="bottom">
+                                    <Val>#3</Val>
+                                    <rank>Rank</rank>
+                                </Ranks>
+                            </card_detail>
+                        </card>
+                    </card_list>
+                </gift_card>
+                <gift_card GID="2d">
+                    <Data_Info form="Digital">
+                        <Name>iTunes Gift Card</Name>
+                        <Item_Num>178992547</Item_Num>
+                        <type form="Digital">Digital</type>
+                        <Developer platform="Music">Apple</Developer>
+                        <Amount currency="pound">100</Amount>
+                        <Validity char="date">2022-09-01</Validity>
+                        <Use_Place>itunes App or website</Use_Place>  
+                        <Delievery>
+                            <deli_time>Instant Delievery</deli_time>
+                            <deli_time>In the future</deli_time>
+                        </Delievery> <!-- Optional Data-->
+                        <deli_type>Text Message or E-mail</deli_type>
+                        <Num_Users>3</Num_Users>
+                        <Payment>
+                            <pay_eg>e-sewa, Khalti</pay_eg>
+                        </Payment>
+                        <policy>
+                            <return>No</return>
+                            <refund>No</refund>
+                        </policy>
+                        <Availability>No</Availability>
+                        <click class="button"> Add to Cart</click>
+
+                    </Data_Info>
+                    <card_list>
+                        <card CID="G4">
+                            <detail>
+                                <name>iTunes</name>
+                                <description>itunes is a software program created by the Apple company that
+                                    acts as a media player and media library. The gift card can be used to get
+                                    discounts when purchasing music.</description>
+                            </detail>
+                            <card_detail>
+                                <Quantity location="bottom">
+                                    <Number>00</Number>
+                                    <Title>Quantity</Title>
+                                </Quantity>
+                                <Rating location="bottom">
+                                    <Num>4.7</Num>
+                                    <title>Rating</title>
+                                </Rating>
+                                <Ranks location="bottom">
+                                    <Val>#4</Val>
+                                    <rank>Rank</rank>
+                                </Ranks>
+                            </card_detail>
+                        </card>
+                    </card_list>
+                </gift_card>
+        </category>
+        <category kind="Food">
+            <gift_card GID="2e">
+                <Data_Info form="Physical">
+                    <Name>Greggs Gift Card</Name>
+                    <Item_Num> 162376472</Item_Num>
+                    <type form="Physical">Physical</type>
+                    <Developer platform="Food">Greggs</Developer>
+                    <Amount currency="pound">30</Amount>
+                    <Validity char="date">2023-01-30</Validity>
+                    <discount>4</discount>
+                    <Use_Place>Greggs Restaurant</Use_Place>  
+                    
+                    <Num_Users>2</Num_Users>
+                    <Payment>
+                        <pay_phy>Cash on Delievery</pay_phy><!-- -->
+                        <pay_eg>e-sewa, Khalti</pay_eg>
+                    </Payment>
+                    <policy>
+                        <return>Yes</return>
+                        <refund>No</refund>
+                    </policy>
+                    <Availability>No</Availability>
+                    <click class="button"> Add to Cart</click>
+
+                </Data_Info>
+                <card_list>
+                    <card CID="G5">
+                        <detail>
+                            <name>itunes</name>
+                            <description>Greggs is a popular fast food restaurant in the UK. The gift card can be used to get
+                                discounts when eating at greggs.</description>
+                        </detail>
+                        <card_detail>
+                            <Quantity location="bottom">
+                                <Number>0</Number>
+                                <Title>Quantity</Title>
+                            </Quantity>
+                            <Rating location="bottom">
+                                <Num>4.3</Num>
+                                <title>Rating</title>
+                            </Rating>
+                            <Ranks location="bottom">
+                                <Val>#7</Val>
+                                <rank>Rank</rank>
+                            </Ranks>
+                        </card_detail>
+                    </card>
+                </card_list>
+            </gift_card>
+            <gift_card GID="2f">
+                <Data_Info form="Physical">   
+                    <Name>Starbucks Gift Card</Name>
+                    <Item_Num>188441511</Item_Num>
+                    <type form="Physical">Physical</type>
+                    <Developer platform="Food">Starbucks</Developer>
+                    <Amount currency="pound">20</Amount>
+                    <Validity char="date">2022-12-30</Validity>
+                    <Use_Place>Starbucks Shop</Use_Place>  
+                    <Delievery>
+                        <deli_time>Instant Delievery</deli_time>
+                    </Delievery> <!-- Optional Data-->
+                    <Num_Users>1</Num_Users>
+                    <Payment>
+                        <pay_phy>Cash on Delievery</pay_phy><!-- -->
+                        <pay_eg>e-sewa, Khalti</pay_eg>
+                    </Payment>
+                    <policy>
+                        <return>No</return>
+                        <refund>No</refund>
+                    </policy>
+                    <Availability>Yes</Availability>
+                    <click class="button"> Add to Cart</click>
+
+                </Data_Info>
+                <card_list>
+                    <card CID="G6">
+                        <detail>
+                            <name>Starbucks</name>
+                            <description>Starbucks is a coffee shop which is very famous for serving many varieties of coffee. The gift card can be used to get
+                                discounts when ordering from Starbucks.</description>
+                        </detail>
+                        <card_detail>
+                            <Quantity location="bottom">
+                                <Number>30</Number>
+                                <Title>Quantity</Title>
+                            </Quantity>
+                            <Rating location="bottom">
+                                <Num>4.7</Num>
+                                <title>Rating</title>
+                            </Rating>
+                            <Ranks location="bottom">
+                                <Val>#6</Val>
+                                <rank>Rank</rank>
+                            </Ranks>
+                        </card_detail>
+                    </card>
+                </card_list>
+            </gift_card>
+    </category>
+    </main>
+
+    <footer>
+            
+            <address>
+                <street>Picadilly</street>
+                <city>London</city>
+                <postal_code>E17 8EG</postal_code>
+            </address>
+            <contact>
+                <Phone>442079354464</Phone>
+                <email>Giftsandco@gmail.com</email>
+            </contact>
+            <web_address>www.smilesformiles.com</web_address>
+            <logo/>
+            <branch>
+                <st_location>Kathmandu</st_location>
+                <st_contact>9874562145</st_contact>
+            </branch>
+            <bar_code></bar_code>
+        
+    </footer>
+
+</gift_vouch>

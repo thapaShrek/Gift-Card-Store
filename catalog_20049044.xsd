@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+
+    <xs:element name="gift_vouch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Navigation" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="storelogo" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="main" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="footer" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Navigation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_name"/>
+                <xs:element ref="Content" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="main">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="category" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+            
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="category">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gift_card" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="kind" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="gift_card">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Data_Info"/>     
+                <xs:element ref="card_list"/>          
+            </xs:sequence>  
+            <xs:attribute ref="GID" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Data_Info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Name"/>
+                <xs:element ref="Item_Num"/>
+                <xs:element ref="type" />
+                <xs:element ref="UID" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="Developer"/>
+                <xs:element ref="Publisher" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="Amount"/>
+                <xs:element ref="Validity"/>
+                <xs:element ref="discount" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="cashback" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="Use_Place"/>
+                <xs:element ref="Delievery" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="deli_type" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="Num_Users"/>
+                <xs:element ref="Payment"/>
+                <xs:element ref="policy"/>
+                <xs:element ref="Availability"/>
+                <xs:element ref="click"/>
+            </xs:sequence>
+            <xs:attribute ref="char" use="optional"/>
+            <xs:attribute ref="platform" use="optional"/>
+            <xs:attribute ref="currency" use="optional"/>
+            <xs:attribute ref="class" use="optional"/>
+            <xs:attribute ref="form" use="required"/>
+
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="card_list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="card"/>
+            </xs:sequence>
+            <xs:attribute ref="CID"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="card">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="detail"/>
+                <xs:element ref="card_detail"/>
+            </xs:sequence>
+            <xs:attribute ref="CID" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="detail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="description"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="card_detail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Quantity"/>
+                <xs:element ref="Rating"/>
+                <xs:element ref="Ranks"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Quantity">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Number"/>
+                <xs:element ref="Title"/>
+            </xs:sequence>
+            <xs:attribute ref="location"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Rating">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Num"/>
+                <xs:element ref="title"/>
+            </xs:sequence>
+            <xs:attribute ref="location"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Ranks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Val"/>
+                <xs:element ref="rank"/>
+            </xs:sequence>
+            <xs:attribute ref="location"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Delievery">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="deli_time" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Payment">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pay_phy" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="pay_eg" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="policy">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="return"/>
+                <xs:element ref="refund"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="footer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="address"/>
+                <xs:element ref="contact"/>
+                <xs:element ref="web_address"/>
+                <xs:element ref="logo"/>
+                <xs:element ref="branch"/>
+                <xs:element ref="bar_code"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="street"/>
+                <xs:element ref="city"/>
+                <xs:element ref="postal_code" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="contact">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Phone"/>
+                <xs:element ref="email"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="branch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="st_location"/>
+                <xs:element ref="st_contact"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="type">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="form"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Developer">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="platform"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Amount">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="currency"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Validity">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="char"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="click">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="class"/>
+        </xs:complexType>
+    </xs:element>
+
+
+    
+    <xs:element name="storelogo"/>
+    <xs:element name="store_name" type="xs:string"/>
+    <xs:element name="Content" type="xs:string"/>
+    <xs:element name="heading" type="xs:string"/>
+    <xs:element name="Name" type="xs:string"/>
+    <xs:element name="UID" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="Publisher" type="xs:string"/>
+    <xs:element name="deli_type" type="xs:string" />
+    <xs:element name="discount" type="xs:integer"/>
+    <xs:element name="cashback" type="xs:integer"/>
+    <xs:element name="Use_Place" type="xs:string"/>
+    <xs:element name="deli_time" type="xs:string"/>
+    <xs:element name="Num_Users" type="xs:integer"/>
+    <xs:element name="Number" type="xs:integer"/>
+    <xs:element name="Title" type="xs:string"/>
+    <xs:element name="pay_phy" type="xs:string"/>
+    <xs:element name="pay_eg" type="xs:string"/>
+    <xs:element name="return" type="xs:string"/>
+    <xs:element name="refund" type="xs:string"/>
+    <xs:element name="Item_Num" type="xs:integer"/>
+    <xs:element name="Availability" type="xs:string"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="Num" type="xs:decimal"/>
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="Val" type="xs:string"/>
+    <xs:element name="rank" type="xs:string"/>
+    <xs:element name="street" type="xs:string"/>
+    <xs:element name="city" type="xs:string"/>
+    <xs:element name="postal_code" type="xs:string"/>
+    <xs:element name="Phone" type="xs:integer"/>
+
+    <xs:element name="st_location" type="xs:string"/>
+    <xs:element name="st_contact" type="xs:integer"/>
+    <xs:element name="web_address" type="xs:string"/>
+    <xs:element name="bar_code"/>
+    <xs:element name="logo"/>
+    
+
+    <xs:attribute name="SID" type="xs:ID"/>
+    <xs:attribute name="CID" type="xs:ID"/>
+    <xs:attribute name="GID" type="xs:string"/>
+    <xs:attribute name="form">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Physical"/>
+                <xs:enumeration value="Digital"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="platform">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="e-commerce"/>
+                <xs:enumeration value="Food"/>
+                <xs:enumeration value="Music"/>
+                <xs:enumeration value="Retail Store"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="kind" type="xs:string"/>
+    <xs:attribute name="currency" type="xs:string"/>
+    <xs:attribute name="char" type="xs:string"/>
+    <xs:attribute name="location" type="xs:string"/>
+    <xs:attribute name="class" type="xs:string"/>
+    
+    <xs:element name="email">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[^@]+@[^\.]+\..+"/>
+            </xs:restriction>
+        </xs:simpleType>
+
+    </xs:element>
+
+</xs:schema>
